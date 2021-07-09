@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./topbar.css";
-import picture from "../assets/pictureTopbar.jpg";
-import logo from "../assets/logo.png";
+import picture from "../../assets/pictureTopbar.jpg";
+import logo from "../../assets/logo.png";
 
 export default function topbar() {
   return (
@@ -29,22 +29,22 @@ export default function topbar() {
 
             <div className="collapse navbar-collapse" id="navbar">
               <div className="col-lg-3">
-                <li className="nav-item">
+                <ul className="nav-item">
                   <i className="topIcon fab fa-instagram-square"></i>
                   <i className="topIcon fab fa-pinterest-square"></i>
                   <i className="topIcon fab fa-facebook-square"></i>
                   <i className="topIcon fab fa-twitter-square"></i>
-                </li>
+                </ul>
               </div>
 
               <div className="col-lg-6">
-                <li className="nav-item">
+                <ul className="nav-item">
                   <li className="nav-item">HOME</li>
                   <li className="nav-item">ABOUT</li>
                   <li className="nav-item">CONTACT</li>
                   <li className="nav-item">WRITE</li>
                   <li className="nav-item">LOGOUT</li>
-                </li>
+                </ul>
               </div>
 
               <div className="col-lg-3">

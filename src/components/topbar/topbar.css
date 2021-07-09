@@ -101,7 +101,8 @@
 
 .topIcon,
 .nav-item {
-  margin-inline: 6px;
+  margin-inline: 15px;
+  cursor: pointer;
 }
 
 .navbar {

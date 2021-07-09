@@ -1,6 +1,6 @@
 import React from "react";
 
-import picture from "../assets/pictureTopbar.jpg";
+import picture from "../../assets/pictureTopbar.jpg";
 import "./sidebar.css";
 
 export default function Sidebar() {

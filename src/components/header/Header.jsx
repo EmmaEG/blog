@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./header.css";
-import forest from "../assets/forest.jpg";
+import forest from "../../assets/forest.jpg";
 
 export default function Header() {
   return (
