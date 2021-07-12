@@ -5,7 +5,7 @@ import "./sidebar.css";
 
 export default function Sidebar() {
   return (
-    <div>
+    <>
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img className="img-fluid" src={picture} alt="" />
@@ -31,6 +31,6 @@ export default function Sidebar() {
           <i className="sidebarIcon fab fa-facebook-square"></i>
         </div>
       </div>
-    </div>
+    </>
   );
 }
