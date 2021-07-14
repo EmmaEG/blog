@@ -1,0 +1,27 @@
+.writeIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #929898;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ffff;
+  background-color: #929898;
+  cursor: pointer;
+}
+
+.image {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form-control {
+    border: none !important;
+}
+
+
