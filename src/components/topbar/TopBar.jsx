@@ -8,7 +8,7 @@ export default function topbar() {
   return (
     <div className="container-fluid sticky-top">
       <div className="row">
-          <nav className="navbar navbar-expand-lg navbar-light text-center">
+          <nav className="navbar navbar-expand-lg navbar-light text-center sticky-top">
             <div className="col-lg-3 d-lg-none">
               <a className="navbar-brand" href="/">
                 <img className="navbar-img" src={logo} alt=""/>
