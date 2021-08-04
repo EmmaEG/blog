@@ -1,0 +1,61 @@
+.navbar {
+  background-color: white;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+@media (min-width: 991px) {
+  .nav-item {
+    /* list-style: none; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-item {
+    margin-top: 15px;
+  }
+  .topImg {
+    margin-top: 15px;
+  }
+}
+
+.topIcon,
+.nav-item {
+  margin-inline: 15px;
+}
+
+.navbar {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar-img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

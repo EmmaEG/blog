@@ -1,0 +1,24 @@
+.image {
+  border-radius: 8px;
+}
+
+.card-text {
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+}
+
+.card-title {
+  cursor: pointer;
+}
+
+.categories {
+  cursor: pointer;
+}
+
+.postDesc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /*lineas que quiero mostrar*/
+  -webkit-box-orient: vertical;
+}

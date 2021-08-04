@@ -1,0 +1,9 @@
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.home {
+  margin: 20px;
+}

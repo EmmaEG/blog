@@ -1,0 +1,54 @@
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+
+  .image {
+    height: 50vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+
+  .account {
+    flex-direction: column;
+  }
+}
+
+/* @media (man-width: 991px) {
+  .settings {
+    width: 100%;
+  }
+} */
+
+.setimage {
+  height: 20vh;
+  width: 15%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.settingsIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid lightcoral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px;
+  color: #ffff;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  color: lightcoral;
+}
+
+.settingsTitle {
+  color: lightcoral;
+}
+

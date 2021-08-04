@@ -1,0 +1,42 @@
+.login {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url('../../assets/wall.jpg');
+    /* background-size: cover;
+    height: 100vh; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.loginform {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.form-label {
+    font-size: large;
+    color: #212529;
+}
+
+.form-control {
+    height: 45px;
+}
+
+.button {
+    display: grid;
+}
+
+.loginlink > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: lightskyblue;
+}
