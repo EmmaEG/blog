@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Home from './pages/home/Home';
 import TopBar from './components/topbar/TopBar';
 import Login from './pages/login/Login';
@@ -27,6 +30,7 @@ function App() {
           <Single />
         </Route>
       </Switch>
+      <ToastContainer />
     </Router>
   );
 }

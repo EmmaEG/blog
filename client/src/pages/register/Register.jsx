@@ -1,13 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 import './register.css';
 
 const Register = () => {
+  const history = useHistory(); // allows us to change the router
+
   const initialValues = {
-    name: '',
+    username: '',
     email: '',
-    password: ''
+    password: '',
+  };
+
+  const handleSubmit = async (values, { resetForm }) => {
+    try {
+      const res = await axios.post('/auth/register', {
+        username: values.username,
+        email: values.email,
+        password: values.password,
+      });
+      // console.log(res);
+      resetForm({});
+      history.push('/login');
+    } catch (error) {
+      resetForm({});
+      console.log(error);
+      toast('invalid username or email, tries with another', {
+        position: 'bottom-center',
+        type: 'error',
+        autoClose: 2000,
+      });
+    }
   };
 
   return (
@@ -18,7 +45,7 @@ const Register = () => {
           <div className='registerform mt-1 mb-3'>
             <Formik
               initialValues={initialValues}
-              // onSubmit={}
+              onSubmit={handleSubmit}
               validate={(values) => {
                 const errors = {};
                 if (!values.email) {
@@ -33,8 +60,8 @@ const Register = () => {
                 } else if (values.password.length < 6) {
                   errors.password = 'password must be 6 characters';
                 }
-                if (!values.name) {
-                    errors.name = 'Username is required';
+                if (!values.username) {
+                  errors.username = 'Username is required';
                 }
                 return errors;
               }}
@@ -47,13 +74,13 @@ const Register = () => {
                       <Field
                         className='form-control mb-2'
                         type='text'
-                        name='name'
+                        name='username'
                         placeholder='Enter a name'
                         autoFocus
                       />
                       <ErrorMessage
                         className='mb-2 p-2 text-center fw-bold'
-                        name='name'
+                        name='username'
                         component='p'
                       />
                     </div>
@@ -97,7 +124,7 @@ const Register = () => {
                     </div>
                     <div className='link text-center'>
                       <h6>¿Do you already have an account?</h6>
-                      <a href="">Login</a>
+                      <Link to='/login'>Login</Link>
                       {/* <button
                         className='btn'
                         style={{ background: 'lightcoral' }}

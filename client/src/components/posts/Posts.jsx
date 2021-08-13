@@ -3,20 +3,15 @@ import Post from '../post/Post';
 
 import './posts.css';
 
-export default function Posts() {
+export default function Posts({ posts }) {
   return (
     <div className='posts'>
       <div className='row'>
-        <div className='col-lg-6 col-md-6'>
-          <Post />
-          <Post />
-          <Post />
-        </div>
-        <div className='col-lg-6 col-md-6'>
-          <Post />
-          <Post />
-          <Post />
-        </div>
+        {posts.map((p) => (
+          <div className='col-lg-6 col-md-6'>
+            <Post post={p} />
+          </div>
+        ))}
       </div>
     </div>
   );

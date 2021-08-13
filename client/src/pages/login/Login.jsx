@@ -2,6 +2,7 @@ import React from 'react';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 
 import './login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const initialValues = {
@@ -79,7 +80,7 @@ const Login = () => {
                     </div>
                     <div className='loginlink text-center'>
                       <h6>¿You don't have an account yet?</h6>
-                      <a href=''>Register</a>
+                      <Link to='/register'>Register</Link>
                       {/* <button
                         className='btn'
                         style={{ background: 'lightskyblue' }}
