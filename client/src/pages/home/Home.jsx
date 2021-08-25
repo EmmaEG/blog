@@ -13,12 +13,12 @@ export default function Home() {
   const {search} = useLocation(); // useLocation always returns the current url
 
   useEffect(() => {
-    const fetchPosts = async () => {
+    const getPosts = async () => {
       const res = await axios.get('/posts' + search);
       // console.log(res);
       setposts(res.data);
     };
-    fetchPosts();
+    getPosts();
   }, [search]);
 
   return (
