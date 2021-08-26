@@ -78,7 +78,7 @@ const Topbar = () => {
             <div className="col-lg-3">
               {user ? (
                 <>
-                  <img className="topImg" src={picture} alt="" />
+                  <img className="topImg" src={user.profilePic} alt="User image" />
                   <i className="topSearchIcon fas fa-search"></i>
                 </>
               ) : (

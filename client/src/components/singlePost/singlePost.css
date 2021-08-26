@@ -13,6 +13,16 @@
   margin: auto;
 }
 
+.titleInput {
+  outline: none;
+  border: none;
+  font-family: "Dancing Script", cursive;
+  color: grey;
+  font-size: 50px;
+  margin: auto;
+  text-align: center;
+}
+
 .actions > p > a {
   font-size: 16px;
   margin-inline: 10px;
@@ -31,6 +41,18 @@
   font-family: "Varela Round", sans-serif;
   text-align: justify;
 }
+
+.singlePostDesc {
+  outline: none;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+  color: grey;
+  font-size: 16px;
+  text-align: justify;
+  width: -webkit-fill-available;
+  text-align: center;
+}
+
 
 .singlePost::first-letter {
     margin-left: 20px;

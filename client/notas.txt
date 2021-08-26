@@ -1,0 +1,2 @@
+{} = desestrutcturación arreglos
+[] = desestrutcturación Objetos
