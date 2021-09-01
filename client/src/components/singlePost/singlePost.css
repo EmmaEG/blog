@@ -2,6 +2,10 @@
   border-radius: 8px;
 }
 
+li {
+  list-style: none;
+}
+
 .card-text {
   font-family: "Varela Round", sans-serif;
   text-align: center;
@@ -23,17 +27,19 @@
   text-align: center;
 }
 
-.actions > p > a {
+.actions > p > li {
   font-size: 16px;
-  margin-inline: 10px;
+  margin-inline: 7px;
+  display: inline;
   color: black;
+  cursor: pointer;
 }
 
-.actions > p > a:first-child {
+.actions > p > li:first-child {
   color: teal;
 }
 
-.actions > p > a:last-child {
+.actions > p > li:last-child {
   color: tomato;
 }
 

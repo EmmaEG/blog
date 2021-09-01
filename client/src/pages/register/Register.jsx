@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import { ErrorMessage, Field, Form, Formik } from 'formik';
@@ -18,7 +18,7 @@ const Register = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      const res = await axios.post('/auth/register', {
+      await axios.post('/auth/register', {
         username: values.username,
         email: values.email,
         password: values.password,

@@ -4,7 +4,7 @@ import axios from "axios";
 import { Context } from "../../context/Context";
 
 import "./write.css";
-import waterfall from "../../assets/waterfall.jpg";
+// import waterfall from "../../assets/waterfall.jpg";
 
 export default function Write() {
   const [title, setTitle] = useState("");
@@ -46,7 +46,7 @@ export default function Write() {
               <img
                 className="image"
                 src={URL.createObjectURL(file)}
-                alt="Image Post"
+                alt=""
               />
             )}
           </div>
@@ -82,7 +82,6 @@ export default function Write() {
               ></textarea>
             </div>
             <button
-              type="button"
               className="btn btn-outline-secondary"
               type="submit"
             >

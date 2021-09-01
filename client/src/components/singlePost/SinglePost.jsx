@@ -3,7 +3,7 @@ import { Link, useHistory, useLocation } from "react-router-dom";
 import axios from "axios";
 
 import "./singlePost.css";
-import waterfall from "../../assets/waterfall.jpg";
+// import waterfall from "../../assets/waterfall.jpg";
 import { Context } from "../../context/Context";
 
 export default function SinglePost() {
@@ -50,13 +50,13 @@ export default function SinglePost() {
     } catch (error) {}
   };
 
-  console.log(post.username === user.username);
+  // console.log(post.username === user.username);
 
   return (
     <>
       <div className="card border-light text-center mb-4">
         {post.photo && (
-          <img className="image" src={publicFolder + post.photo} alt="photo" />
+          <img className="image" src={publicFolder + post.photo} alt="" />
         )}
         <div className="card-body">
           {updateMode ? (
@@ -92,15 +92,15 @@ export default function SinglePost() {
               </p>
               {post.username === user?.username && (
                 <p className="card-text">
-                  <a>
+                  <li>
                     <i
                       className="far fa-edit"
                       onClick={() => setUpdateMode(true)}
                     ></i>
-                  </a>
-                  <a>
+                  </li>
+                  <li>
                     <i className="far fa-trash-alt" onClick={handleDelte}></i>
-                  </a>
+                  </li>
                 </p>
               )}
             </div>
@@ -117,7 +117,6 @@ export default function SinglePost() {
         </div>
         {updateMode && (
           <button
-            type="button"
             className="btn btn-outline-secondary"
             type="submit"
             onClick={handleUpdate}

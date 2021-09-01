@@ -9,11 +9,13 @@ import picture from "../../assets/pictureTopbar.jpg";
 const Topbar = () => {
 
   const { user, dispacth } = useContext(Context);
+  const publicFolder = "http://localhost:5000/images/";
   
 
   const handleLogout = () => {
     dispacth({ type: "LOGOUT" });
   };
+
 
   return (
     <div className="container-fluid sticky-top">
@@ -77,10 +79,17 @@ const Topbar = () => {
 
             <div className="col-lg-3">
               {user ? (
+              <Link to="/settings">
                 <>
-                  <img className="topImg" src={user.profilePic} alt="User image" />
+                {user.profilePic ? (
+                  <img className="topImg" src={publicFolder + user.profilePic} alt="" />
+                ) : (
+                  <img className="topImg" src={picture} alt="" />
+
+                )}
                   <i className="topSearchIcon fas fa-search"></i>
                 </>
+              </Link>
               ) : (
                 <ul>
                   <li className="nav-item">

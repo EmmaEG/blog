@@ -8,7 +8,7 @@ export default function Posts({ posts }) {
     <div className='posts'>
       <div className='row'>
         {posts.map((p) => (
-          <div className='col-lg-6 col-md-6'>
+          <div className='col-lg-6 col-md-6' key={p._id}>
             <Post post={p} />
           </div>
         ))}

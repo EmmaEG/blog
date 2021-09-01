@@ -19,6 +19,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /*lineas que quiero mostrar*/
+  -webkit-line-clamp: 1; /*lineas que quiero mostrar*/
   -webkit-box-orient: vertical;
 }
